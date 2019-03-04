@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="2huSokoban" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/2huSokoban" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/2huSokoban" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add directory="SDL2-2.0.4/i686-w64-mingw32/include" />
+			<Add directory="FMOD/include" />
+		</Compiler>
+		<Linker>
+			<Add library="../../../Utilitaires/CodeBlocks/MinGW/lib/libmingw32.a" />
+			<Add library="SDL2-2.0.4/i686-w64-mingw32/lib/libSDL2main.a" />
+			<Add library="SDL2-2.0.4/i686-w64-mingw32/lib/libSDL2.dll.a" />
+			<Add library="FMOD/lib/libfmod.a" />
+			<Add directory="SDL2-2.0.4/i686-w64-mingw32/lib" />
+			<Add directory="FMOD/lib" />
+		</Linker>
+		<Unit filename="constantes.h" />
+		<Unit filename="erreur.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="erreur.h" />
+		<Unit filename="jeu.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="jeu.h" />
+		<Unit filename="main.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
